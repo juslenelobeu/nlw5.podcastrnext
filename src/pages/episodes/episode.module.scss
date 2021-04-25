@@ -84,3 +84,12 @@
         }
     }
 }
+
+@media (max-width:425px) {
+    .thumbnailContainer {    
+        div:first-child {
+            height: 15rem;
+        }
+    }
+    
+}
