@@ -25,9 +25,14 @@
             display: flex;
             align-items: center;
 
-            img {
+            & div:first-child {
                 width: 6rem;
                 height: 6rem;
+            }
+
+            img {
+                // width: 6rem;
+                // height: 6rem;
                 border-radius: 1rem;
             }
 
@@ -114,7 +119,7 @@
 
     table {
         width: 100%;
-
+        
         th, td {
             padding: 0.75rem 1rem;
             border-bottom: 1px solid var(--gray-100);
@@ -129,10 +134,13 @@
 
         td {
             font-size: 0.875rem;
-
-            img {
+            &:first-child div {
                 width: 2.5rem;
                 height: 2.5rem;
+            }
+            img {
+                // width: 2.5rem;
+                // height: 2.5rem;
                 border-radius: 0.5rem;
             }
 
@@ -169,6 +177,100 @@
                 }
             }
 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage {
+        padding-top: 2rem;
+        // height: 100vh;
+    }
+    .latestEpisodes {
+        ul {
+            grid-template-columns: 1fr;
+            li {
+                & div:first-child {
+                width: 6rem;
+                height: 6rem;
+                }
+            }
+        }
+    }
+    .allEpisodes {
+        table {
+            td {
+                font-size: 0.675rem;
+                &:first-child div {
+                    width: 3rem;
+                    height: 3rem;
+                }
+                a {
+                    font-size: 0.775rem;
+                    line-height: normal;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .homepage {
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    .allEpisodes {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .latestEpisodes {
+        ul {
+            display: block;
+            font-size: 0.775rem;
+
+            li {
+                display: block;
+
+                &:first-child {
+                    margin-bottom: 1rem;
+                }
+
+                & div:first-child {
+                    width: 100%;
+                    height: 6rem;
+                }
+
+                .episodeDetails {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    .allEpisodes {
+        overflow-x: auto;
+        table {
+            width: 100%;
+            td {
+                &:first-child div {
+                    width: 2rem;
+                    height: 2rem;
+                }
+                a {
+                    // font-size: 0.875rem;
+                    line-height: normal;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+            }
         }
     }
 }

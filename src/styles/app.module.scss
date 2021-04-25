@@ -4,3 +4,17 @@
         flex: 1;
     }
 }
+
+@media (max-width: 576px) {
+    .wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        display: block;
+    }
+}

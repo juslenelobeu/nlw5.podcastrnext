@@ -131,3 +131,50 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .playerContainer {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .playerContainer {
+        height: auto;
+        width: 100vw;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: "thumb header" "thumb footer";
+        gap: 1rem;
+        // border-radius: 1rem;
+
+        header {
+            grid-area: header;
+            justify-content: center;
+            // border: thin solid;
+        }
+        
+        .emptyPlayer, .currentEpisode {
+            grid-area: thumb;
+            // border: thin solid;
+        }
+        
+        footer {
+            grid-area: footer;
+            // border: thin solid;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .playerContainer {
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: "header" "thumb" "footer";
+    }
+}

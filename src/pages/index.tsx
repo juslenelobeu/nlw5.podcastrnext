@@ -36,7 +36,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
         <title>Home | Podcastr</title>
       </Head>
       <section className={styles.latestEpisodes}>
-        <h2>Últimos lançamentos {playList}</h2>
+        <h2>Últimos lançamentos</h2>
         <ul>
           {latestEpisodes.map((episode, index) => {
             return (
@@ -81,10 +81,10 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
               {allEpisodes.map((episode, index) => {
                 return (
                   <tr key={episode.id}>
-                    <td style={{width:72}}>
+                    <td>
                       <Image 
-                        width={120}
-                        height={120}
+                        width={150}
+                        height={150}
                         src={episode.thumbnail}
                         alt={episode.title}
                         objectFit="cover"
