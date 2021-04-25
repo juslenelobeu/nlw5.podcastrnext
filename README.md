@@ -1,7 +1,7 @@
 # Podcastr
 Projeto desenvolvido com **reactJS** **nextJS** no #NLW5 da @rocketseat trilha #reactJS
 
-[![Video](https://img.youtube.com/vi/qLd2_PSOLfk/maxresdefault.jpg)](https://youtu.be/qLd2_PSOLfk)
+[![Video](https://img.youtube.com/vi/FS2h-jUdjuM/maxresdefault.jpg)](https://youtu.be/FS2h-jUdjuM)
 
 ## ScreenShot
 
